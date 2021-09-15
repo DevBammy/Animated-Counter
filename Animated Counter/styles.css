@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+    background: lightblue url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-1072179.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+header{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    font-size: 3rem;
+}
+.counters h3{
+    font-weight: 300;
+}
+
+.counters{
+    background: rgb(11, 1, 39);
+    border-top: 3px solid #fff;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center; 
+}
+.counters .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+i{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.counters .counter{
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+
+@media screen and (max-width:700px){
+    .counters .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    }
+    header h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
